@@ -22,4 +22,20 @@ create table if not exists UserDetail
 );
 
 
+create table if not exists BloodRequest
+(
+  username varchar(30) not null,
+  city varchar(20) not null,
+  bloodgroup char(5) not null,
+  hospitalname text not null,
+  mobilenumber bigint not null
+);
 
+create table if not exists Campus
+(
+  name varchar(50) not null,
+  address text not null,
+  city varchar(20) not null,
+  date_e date not null,
+  time_e time not null
+);
