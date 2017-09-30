@@ -1,0 +1,29 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+ul
+{
+	list-style-type: none;
+	background-color: red;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	
+}
+a
+{
+	text-decoration: none;
+	font-size: 25px;
+	color:black;
+}
+li
+{
+	display: inline;
+	font-style: 15px;
+	padding: 10px;
+	margin-left: 65px;
+
+
+}
