@@ -34,7 +34,7 @@ if(mysqli_num_rows($result)>0)
 }
 else
 {
-	echo "There no on going camps";
+	echo "There Is No On Going Camps";
 
 }
 
