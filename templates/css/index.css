@@ -6,10 +6,9 @@ body
 ul
 {
 	list-style-type: none;
-	background-color: red;
+	background-color: lightblue;
 	height: 30px;
-	margin: 0;
-	padding: 0;
+	
 	
 }
 a
@@ -23,7 +22,7 @@ li
 	display: inline;
 	font-style: 15px;
 	padding: 10px;
-	margin-left: 65px;
+	margin-left: 60px;
 
 
 }

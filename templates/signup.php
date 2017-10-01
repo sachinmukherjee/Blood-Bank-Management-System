@@ -1,6 +1,9 @@
 <?php 
 session_start();
 include 'database.php';
+error_reporting(0);
+if($_REQUEST['error'] == 'noaccount');
+	$pageerror = "Please Register First";
 ?>
 
 <!DOCTYPE>
@@ -10,7 +13,13 @@ include 'database.php';
 	<title>Sign Up</title>
 </head>
 <body>
-<h1>Please Sign Up</h1>
+<?php 
+if(isset($pageerror))
+{
+	echo "<h4>$pageerror</h4>";
+}
+?>
+<h1>Sign Up</h1>
 <br>
 <br>
 <form action="signup.php" method="post">

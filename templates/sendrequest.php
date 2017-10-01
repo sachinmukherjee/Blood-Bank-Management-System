@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'database.php';
+error_reporting();
 
 if(isset($_SESSION['login_id']))
 {
@@ -9,7 +10,7 @@ if(isset($_SESSION['login_id']))
 
 else
 {
-	header("Location:login.php");
+	header("Location:login.php?error=nologin");
 }
 
 
