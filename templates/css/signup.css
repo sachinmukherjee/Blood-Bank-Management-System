@@ -7,40 +7,42 @@ body
 form
 {
 	border:2px solid lightblue;
-	height:500px;
-	width: 600px;
-	margin-left: 450px;
-	margin-top: 100px;
+	height:600px;
+	width: 800px;
+	margin-left: 350px;
+	margin-top: 10px;
 	margin-right: 100px;
-	padding: 10px;
 }
 input[type=text], input[type=password]
 {
-	width: 100%;
+	width: 90%;
 	height:50px;
-	padding: 10px;
+	padding: 20px;
 	font-weight: bolder;
 	font-size: 20px;
-
+	position: relative;
+	left: 40px;
 }
 button
 {
-	width:80px;
+	width:90px;
 	height:40px;
 	font-weight: bolder;
 	position: relative;
-	left: 220px;
+	left: 350px;
 	background-color: red;
 }
 label
 {
 	font-weight: bold;
+	position: relative;
+	left: 40px;
 	font-size: 20px;
 }
 h1
 {
 color:red;
 position: relative;
-left:220px;
+left:350px;
 }
 

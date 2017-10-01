@@ -10,29 +10,33 @@ if($_REQUEST['error'] == 'noaccount');
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/signup.css">
 	<title>Sign Up</title>
 </head>
 <body>
 <?php 
 if(isset($pageerror))
 {
-	echo "<h4>$pageerror</h4>";
+	echo "<h4 style=color:pink;position:relative;left:680px;top:10px;font-weight:bolder;>$pageerror</h4>";
 }
 ?>
-<h1>Sign Up</h1>
-<br>
-<br>
 <form action="signup.php" method="post">
+<h1>Sign Up</h1>
+<br><br>
 	<label>Please Enter Email</label>
 	<input type="text" name="email">
+	<br>
 	<br>
 	<br>
 	<label>Enter Password</label>
 	<input type="password" name="password">
 	<br>
 	<br>
+	<br>
 	<label>Enter Password Once Again</label>
 	<input type="password" name="password1">
+	<br>
+	<br>
 	<br>
 	<br>
 	<button name="submit">Submit</button>
