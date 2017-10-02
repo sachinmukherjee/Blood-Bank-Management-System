@@ -6,23 +6,40 @@ body
 ul
 {
 	list-style-type: none;
-	background-color: lightblue;
-	height: 30px;
+	background-color: red;
+	height: 35px;
 	
 	
 }
 a
 {
 	text-decoration: none;
-	font-size: 25px;
-	color:black;
+	font-size: 20px;
+	color:white;
+	position: relative;
+	top: 4px;
 }
 li
 {
 	display: inline;
 	font-style: 15px;
 	padding: 10px;
-	margin-left: 60px;
+	margin-left: 15px;
 
 
+}
+.welcome
+{
+	background-color: pink;
+	position: relative;
+	bottom: 16px;
+}
+p
+{
+	text-align: justify;
+	max-width: 1000px;
+	max-height: 80px;
+	position: absolute;
+	left: 60px;
+	font-size: 20px;
 }

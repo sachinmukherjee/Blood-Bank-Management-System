@@ -2,11 +2,12 @@
 session_start();
 include 'database.php';
 error_reporting(0);
-if($_REQUEST['error'] == 'noaccount');
+if($_REQUEST['error'] == 'noaccount')
+{
 	$pageerror = "Please Register First";
+}
 ?>
 
-<!DOCTYPE>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,11 +15,14 @@ if($_REQUEST['error'] == 'noaccount');
 	<title>Sign Up</title>
 </head>
 <body>
+
 <?php 
 if(isset($pageerror))
 {
 	echo "<h4 style=color:pink;position:relative;left:680px;top:10px;font-weight:bolder;>$pageerror</h4>";
+
 }
+
 ?>
 <form action="signup.php" method="post">
 <h1>Sign Up</h1>
@@ -43,8 +47,8 @@ if(isset($pageerror))
 </form>
 </body>
 </html>
+
 <?php 
-include 'database.php';
 if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['password1']) && isset($_POST['password']))
 {
 	$email = $_POST['email'];
@@ -58,22 +62,21 @@ if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['password1'
 		{
 			mysqli_stmt_blind_param($stmt, "ss",$login_id, $email, $password);
 			mysqli_stmt_execute($stmt);
-			echo "success";
+		
 			# to generate session variable for login id
-			$authentication = "select * from LogIn where email = $email and pass = $password;";
-			# Location("profile.php");
-		}
-		else
-		{
-			echo "failed";
+
+			$authentication = "select * from LogIn where email = $email;";
+			$result = mysqli_query($conn, $authentication);
+			$_SESSION['login_id'] = $result['login_id'];
+			header("Location:details.php");
 		}
 
 	}
 	else
 	{
-		echo "failed password missmatch";
+		header("Location:signup.php?error=passwordmismatch");
 
-		#Location("login.php");
+		
 	}
 }
 
