@@ -47,6 +47,7 @@ if(isset($_POST['submit']) && isset($_POST['name']) && isset($_POST['email']) &&
 	$city = $_POST['city'];
 	$bloodgroup = $_POST['bloodgroup'];
 	$userid = $_SESSION['login_id'];
+	$_SESSION['bloodgroup'] = $bloodgroup;
 
 	$statement = "insert into UserDetails values(?,?,?,?,?,?,?);";
 	if($result = mysqli_prepare($statement))
