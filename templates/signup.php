@@ -28,18 +28,20 @@ if(isset($pageerror))
 <h1>Sign Up</h1>
 <br><br>
 	<label>Please Enter Email</label>
+	<br>
 	<input type="text" name="email">
 	<br>
 	<br>
 	<br>
 	<label>Enter Password</label>
+	<br>
 	<input type="password" name="password">
 	<br>
 	<br>
 	<br>
 	<label>Enter Password Once Again</label>
-	<input type="password" name="password1">
 	<br>
+	<input type="password" name="password1">
 	<br>
 	<br>
 	<br>

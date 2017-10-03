@@ -15,13 +15,14 @@ form
 }
 input[type=text], input[type=password]
 {
-	width: 90%;
-	height:50px;
+	width: 570px;
+	height:1px;	
 	padding: 20px;
 	font-weight: bolder;
-	font-size: 20px;
+	font-size: 50px;
 	position: relative;
 	left: 40px;
+	top: 40px;
 }
 button
 {
@@ -30,6 +31,7 @@ button
 	font-weight: bolder;
 	position: relative;
 	left: 350px;
+	top: 50px;
 	background-color: red;
 }
 label
@@ -37,12 +39,14 @@ label
 	font-weight: bold;
 	position: relative;
 	left: 40px;
-	font-size: 20px;
+	font-size: 15	px;
+	top: 40px;
 }
 h1
 {
 color:red;
 position: relative;
 left:350px;
+top: 40px;
 }
 
