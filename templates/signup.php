@@ -53,9 +53,9 @@ if(isset($pageerror))
 <?php 
 if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['password1']) && isset($_POST['password']))
 {
-	$email = $_POST['email'];
-	$password = $_POST['password'];
-	$password1 = $_POST['password1'];
+	$email = strtoupper($_POST['email']);
+	$password = strtoupper($_POST['password']);
+	$password1 = strtoupper($_POST['password1']);
 	$login_id = null;
 	if($password == $password1)
 	{

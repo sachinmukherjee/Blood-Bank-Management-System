@@ -40,12 +40,12 @@ error_reporting(0);
 
 if(isset($_POST['submit']) && isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobilenumber']) && isset($_POST['address']) && isset($_POST['city']) && isset($_POST['bloodgroup']))
 {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$mobilenumber = $_POST['mobilenumber'];
-	$address = $_POST['address'];
-	$city = $_POST['city'];
-	$bloodgroup = $_POST['bloodgroup'];
+	$name = strtoupper($_POST['name']);
+	$email = strtoupper($_POST['email']);
+	$mobilenumber = strtoupper($_POST['mobilenumber']);
+	$address = strtoupper($_POST['address']);
+	$city = strtoupper($_POST['city']);
+	$bloodgroup = strtoupper($_POST['bloodgroup']);
 	$userid = $_SESSION['login_id'];
 	$_SESSION['bloodgroup'] = $bloodgroup;
 

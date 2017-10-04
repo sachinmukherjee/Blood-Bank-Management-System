@@ -1,0 +1,30 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+ul
+{
+	list-style-type: none;
+	background-color: red;
+	height: 40px;
+	width:100%;
+	
+}
+a
+{
+	text-decoration: none;
+	font-size: 20px;
+	color:white;
+	position: relative;
+	top: 7px;
+}
+li
+{
+	display: inline;
+	font-style: 15px;
+	padding: 20px;
+	margin-left:20px;
+	position: relative;
+	left: 70px;
+}

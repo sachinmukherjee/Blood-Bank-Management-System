@@ -1,0 +1,59 @@
+body
+{
+	margin: 0;
+	padding:0;
+	
+}
+
+form
+{
+	border:2px solid lightblue;
+	height:600px;
+	width: 800px;
+	margin-left: 0px;
+	margin-top: 50px;
+	margin-right: 100px;
+	padding: 10px;
+
+}
+input[type=text], input[type=password]
+{
+	width: 500px;
+	height:20px;
+	padding: 10px;
+	font-weight: bolder;
+	font-size: 20px;
+	margin-left: 20px;
+
+}
+input[type=textarea]
+{
+	width: 500px;
+	height:50px;
+	padding:10px;
+	font-weight: bolder;
+	font-size: 20px;
+	margin-left: 20px;
+}
+button
+{
+	width:80px;
+	height:40px;
+	font-weight: bolder;
+	position: relative;
+	left: 220px;
+	background-color: red;
+	top: 40px;
+}
+label
+{
+	font-weight: bold;
+	font-size: 20px;
+}
+h1
+{
+color:red;
+position: relative;
+left:220px;
+}
+

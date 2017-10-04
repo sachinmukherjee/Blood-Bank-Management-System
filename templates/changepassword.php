@@ -33,9 +33,9 @@ error_reporting(0);
 
 if (isset($_POST['submit']) && isset($_POST['previouspassword']) && isset($_POST['newpassword']) && isset($_POST['newpassword2'])) 
 {
-	$previouspassword = $_POST['previouspassword'];
-	$newpassword = $_POST['newpassword'];
-	$newpassword2 = $_POST['newpassword2'];
+	$previouspassword = strtoupper($_POST['previouspassword']);
+	$newpassword = strtoupper($_POST['newpassword']);
+	$newpassword2 = strtoupper($_POST['newpassword2']);
 
 	$statement = "select * from LogIn where pass = $previouspassword;";
 	$result = mysqli_query($conn, $statement);

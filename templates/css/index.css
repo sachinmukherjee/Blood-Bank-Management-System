@@ -31,12 +31,7 @@ li
 
 
 }
-.welcome
-{
-	background-color: pink;
-	position: relative;
-	bottom: 16px;
-}
+
 p
 {
 	text-align: justify;
@@ -45,11 +40,32 @@ p
 	position: absolute;
 	left: 60px;
 	font-size: 20px;
+	top: 350px;
+	margin-left: 95px;
 }
 h6
 {
 	position: relative;
-	bottom: -200px;
+	top: 180px;
 	left:60px;
 	font-size: 20px;
+	margin-left: 95px;
+}
+
+.bloodquery
+{
+	position: relative;
+	top:160px;
+	left: 60px;
+	font-size: 20px;
+	margin-left: 95px;
+
+}
+.ongoingcamps
+{
+	position: relative;
+	top: 180px;
+	left: 60px;
+	font-size: 20px;
+	margin-left: 95px;
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Update Details</title>
+	<link rel="stylesheet" type="text/css" href="css/updatedetails.css">
 </head>
 <body>
 <form method="post" action="updatedetails.php">
