@@ -4,7 +4,7 @@
 	<title>Update Details</title>
 	<link rel="stylesheet" type="text/css" href="css/updatedetails.css">
 </head>
-<body>
+<body style="background-image: url("images/bloodcell.jpg");">
 <form method="post" action="updatedetails.php">
 	<h2>Fill all the details</h2>
 	<label>Name</label>
@@ -34,10 +34,10 @@ error_reporting(0);
 
 if(isset($_POST['submit']) && isset($_POST['name']) && isset($_POST['email']) && isset($_POST['mobilenumber']) && isset($_POST['address']) && isset($_POST['city']))
 {
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$mobilenumber = $_POST['mobilenumber'];
-	$address = $_POST['address'];
+	$name = strtoupper($_POST['name']);
+	$email = strtoupper($_POST['email']);
+	$mobilenumber = strtoupper($_POST['mobilenumber']);
+	$address = strtoupper($_POST['address']);
 	$city = $_POST['city'];
 	$user_id = $_SESSION['login_id'];
 

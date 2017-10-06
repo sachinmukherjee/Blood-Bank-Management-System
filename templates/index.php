@@ -12,6 +12,7 @@
 <li><a href="camps.php">Camps</a></li>
 <li><a href="profile.php">Profile</a></li>
 <li><a href="login.php">Login</a></li>
+<li><a href="logout.php">Logout</a></li>
 <li><a href="signup.php">SignUp</a></li>
 <li><a href="about.php">About</a></li>
 </ul>

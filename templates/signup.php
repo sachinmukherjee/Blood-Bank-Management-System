@@ -53,29 +53,39 @@ if(isset($pageerror))
 <?php 
 if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['password1']) && isset($_POST['password']))
 {
-	$email = strtoupper($_POST['email']);
-	$password = strtoupper($_POST['password']);
-	$password1 = strtoupper($_POST['password1']);
+	$email = ($_POST['email']);
+	$password = ($_POST['password']);
+	$password1 = ($_POST['password1']);
+	echo $email;
+	echo $password;
+	echo $password1;
 	$login_id = null;
 	if($password == $password1)
 	{
 		$register = "insert into LogIn values(?,?, ?);";
 		if($stmt = mysqli_prepare($conn, $register))
 		{
+
 			mysqli_stmt_blind_param($stmt, "ss",$login_id, $email, $password);
+			#########################################################################PROBLEM###################################################
+			###################################################################################################################################
 			mysqli_stmt_execute($stmt);
+			
 		
 			# to generate session variable for login id
 
 			$authentication = "select * from LogIn where email = $email;";
 			$result = mysqli_query($conn, $authentication);
 			$_SESSION['login_id'] = $result['login_id'];
+			
 			header("Location:details.php");
 		}
+		
 
 	}
 	else
 	{
+		
 		header("Location:signup.php?error=passwordmismatch");
 
 		

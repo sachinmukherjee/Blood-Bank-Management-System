@@ -29,6 +29,7 @@ if(isset($loginerror))
 <input type="password" name="password">
 <br><br><br><br>
 <button name="submit">Submit</button>
+<p>Please Register Here<a href="signup.php">SignUp</a></p>
 </form>
 </body>
 </html>
@@ -39,8 +40,8 @@ session_start();
 if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['password']))
 {
 
-	$email = strtoupper($_POST['email']);
-	$password = strtoupper($_POST['password']);
+	$email = ($_POST['email']);
+	$password = ($_POST['password']);
 	$validation = "select username, pass from LogIn where username = $email  and pass = $password;";
 	$result = mysqli_query($conn, $validation);
 	if(mysqli_num_rows($result)>0)
