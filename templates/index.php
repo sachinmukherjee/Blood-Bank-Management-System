@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<img src="images/save blood.jpeg" alt="save blood" height="290px" width="1295px">
+<img src="images/save blood.jpeg" alt="save blood" height="290px" width="1295px" style="background-color: red;">
 <ul>
 <li><a href="index.php">Home</a></li>
 <li><a href="camps.php">Camps</a></li>
@@ -18,7 +18,7 @@
 </ul>
 <p> Blood is universally recognized as the most precious elements that sustain life. It saves innumerable lives across the world in a variety of condition. The need of blood is great- on any given day, approximately 39,000 units of Red blood cells are needed. More than 29 million units of blood component are transfused every year. Donate Blood Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to lack of information and accessibility. We positively belive this tool can overcome most of these challenges by effectively connecting the blood donors with blood recipients. </p>
 <br>
-<h6>Latest Blood Queries</h6>
+<h6 style="color: blue;">Latest Blood Queries</h6>
 
 <div class="bloodquery">
 
@@ -32,7 +32,7 @@ $bloodrequest = "select * from RequestBlood;";
 $result = mysqli_query($conn, $bloodrequest);
 if(mysqli_num_rows($result)>0)						# if their are any result
 {
-	echo "<table style=border:100px solid red; border-collapse:collapse;>";
+	echo "<table style=width:1000px; color:blue;>";
 	echo "<tr>";
 	echo "<th>Name</th>";
 	echo "<th>City</th>";
@@ -69,7 +69,7 @@ else
 ?>
 </div>
 <div class="ongoingcamps">
-<h5>On Going Camp</h5>
+<h5 style="color: blue;">On Going Camp</h5>
 <?php 
 $camps = "select * from Camps";
 $camps_result = mysqli_query($conn, $camps);
