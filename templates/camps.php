@@ -7,30 +7,43 @@
 
 <body>
 
+<div>
 <?php 
 include 'database.php';
 session_start();
+echo "<h1 style=position:relative;>Ongoing/ Upcoaming Camps</h1>";
 $statement = "select * from Camps;";
 $result = mysqli_query($conn, $statement);
 if(mysqli_num_rows($result)>0)
 {
 	while($rows = mysqli_fetch_assoc($result))
 	{
+		echo "<table style=position:relative;width:25cm;>";
+		echo "<tr>";
+		echo "<th>Name Of Camp</th>";
+		echo "<th>Address</th>";
+		echo "<th>City</th>";
+		echo "<th>Time</th>";
+		echo "<th>Date</th>";
+		echo "</tr>";
+		echo "<tr style=position:relative;width:25cm;>";
 		$name = $rows['name'];
-		echo $name;
+		echo "<td>$name</td>";
 		echo "<br>";
 		$address = $rows['address'];
-		echo $address;
+		echo "<td>$address</td>";
 		echo "<br>";
 		$city = $rows['city'];
-		echo $city;
+		echo "<td>$city</td>";
 		echo "<br>";
 		$time = $rows['time_e'];
-		echo $time;
+		echo "<td>$time</td>";
 		echo "<br>";
 		$date = $rows['date_e'];
-		echo $date;
+		echo "<td>$date</td>";
 		echo "<br>";
+		echo "</td>";
+		echo "</table>";
 	}
 }
 else
@@ -40,5 +53,6 @@ else
 }
 
 ?>
+</div>
 </body>
 </html>
