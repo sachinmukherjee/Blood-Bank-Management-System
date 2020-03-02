@@ -3,7 +3,7 @@
 # Database Connection # 
 
 $username = "root";
-$password = "bhilai@123";
+$password = "root";
 $servername = "localhost";
 $databasename = "BloodBank";
 
